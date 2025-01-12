@@ -41,6 +41,23 @@ namespace Demo
             //typeA.Fun1();
             //typeA.Fun2();
             #endregion
+
+            #region No Binding
+            //Is a => FullTime Employee is a Employee
+            //Eagle is a bird
+
+            //Animal = dog;
+            //dog = (dog)Animal;
+
+            //object O1 = 3;
+            //O1 = "String";
+
+            //int x = (int)O1;
+            //TypeA refBase= new TypeA(1);
+            ////TypeA type1 = new TypeB(1,2);
+            //TypeB refChild = (TypeB)refBase; //Casting Operator
+            //refChild.A = 1;
+            #endregion
         }
     }
 }
