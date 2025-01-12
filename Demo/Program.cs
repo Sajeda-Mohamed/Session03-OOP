@@ -27,10 +27,19 @@ namespace Demo
         static void Main(string[] args)
         {
             #region Polymorphism [Overriding]
-            TypeA typeA = new TypeA(1);
-            typeA.Fun1();
+            //TypeA typeA = new TypeA(1);
+            //typeA.Fun1();
 
-            TypeB typeB = new TypeB(1,2);
+            //TypeB typeB = new TypeB(1,2);
+            #endregion
+
+            #region Binding
+            //TypeA typeA = new TypeB(1, 2);
+            //typeA.A = 1; //valid
+            ////typeA.B = 2; invalid
+
+            //typeA.Fun1();
+            //typeA.Fun2();
             #endregion
         }
     }
