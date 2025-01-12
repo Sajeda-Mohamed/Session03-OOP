@@ -1,10 +1,63 @@
-﻿namespace Demo
+﻿using Common;
+using TypeBbb = Common.TypeB;
+using TypeB = Demo.New.TypeB;
+namespace Demo
 {
     internal class Program
     {
+        #region Polymorphism[Overloading]
+        public static int Sum(int x, int y)
+        {
+            return x + y;
+        }
+        public static int Sum(int x, int y, int z)
+        {
+            return x + y + z;
+        }
+        public static double Sum(double x, double y)
+        {
+            return x + y;
+        }
+        public static double Sum(int x, double y)
+        {
+            return x + y;
+        } 
+        #endregion
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Polymorphism [Overriding]
+            //TypeA typeA = new TypeA(1);
+            //typeA.Fun1();
+
+            //TypeB typeB = new TypeB(1,2);
+            #endregion
+
+            #region Binding
+            //TypeA typeA = new TypeB(1, 2);
+            //typeA.A = 1; //valid
+            ////typeA.B = 2; invalid
+
+            //typeA.Fun1();
+            //typeA.Fun2();
+            #endregion
+
+            #region No Binding
+            //Is a => FullTime Employee is a Employee
+            //Eagle is a bird
+
+            //Animal = dog;
+            //dog = (dog)Animal;
+
+            //object O1 = 3;
+            //O1 = "String";
+
+            //int x = (int)O1;
+            //TypeA refBase= new TypeA(1);
+            ////TypeA type1 = new TypeB(1,2);
+            //TypeB refChild = (TypeB)refBase; //Casting Operator
+            //refChild.A = 1;
+            #endregion
         }
     }
 }
