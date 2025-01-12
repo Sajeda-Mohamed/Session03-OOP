@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    public class TypeB : TypeA
+    public class TypeB //: TypeA
     {
-        public TypeB()
-        {
-            //TypeA typeA = new TypeA();
-            //typeA.X = 1;=> invalid
-            //typeA.Y = 1;=> invalid
-            //typeA.Z = 1;=  valid;
-            //X = 10;=> private
-            //Y = 20 ;=> private
-            //Z = 30 ;=> internal
-        }
+        //public TypeB()
+        //{
+        //    //TypeA typeA = new TypeA();
+        //    //typeA.X = 1;=> invalid
+        //    //typeA.Y = 1;=> invalid
+        //    //typeA.Z = 1;=  valid;
+        //    //X = 10;=> private
+        //    //Y = 20 ;=> private
+        //    //Z = 30 ;=> internal
+        //}
     }
 }

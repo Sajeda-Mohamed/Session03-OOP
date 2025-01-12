@@ -1,5 +1,6 @@
-﻿using TypeB = Common.TypeB;
-using TypeBB0 = Demo.New.TypeB;
+﻿using Common;
+using TypeBbb = Common.TypeB;
+using TypeB = Demo.New.TypeB;
 namespace Demo
 {
     internal class Program
@@ -25,7 +26,12 @@ namespace Demo
 
         static void Main(string[] args)
         {
-            
+            #region Polymorphism [Overriding]
+            TypeA typeA = new TypeA(1);
+            typeA.Fun1();
+
+            TypeB typeB = new TypeB(1,2);
+            #endregion
         }
     }
 }
